@@ -1,5 +1,4 @@
 pandas
-pickle4
 streamlit
 numpy
 nltk
