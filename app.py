@@ -1,4 +1,4 @@
-import pickle
+import pickle4
 import streamlit as st
 import pandas as pd
 
@@ -28,8 +28,8 @@ def recommend(game):
     return game_lists,game_image_list
         
 # uplode data
-new_df=pickle.load(open("/workspaces/codespaces-jupyter/notebooks/game_data.pkl",'rb'))
-similarity=pickle.load(open("/workspaces/codespaces-jupyter/notebooks/similarity.pkl",'rb'))
+new_df=pickle4.load(open("/workspaces/codespaces-jupyter/notebooks/game_data.pkl",'rb'))
+similarity=pickle4.load(open("/workspaces/codespaces-jupyter/notebooks/similarity.pkl",'rb'))
 game_image=pd.read_csv("/workspaces/codespaces-jupyter/notebooks/image_data.csv")
 game_name = new_df['Name'].values
 
